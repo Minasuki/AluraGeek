@@ -1,0 +1,27 @@
+.header {
+    background-image: none;
+    background-color: #ffffff;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__responsive {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px 32px 0px;
+    width: 80%;
+}
+
+.logo__vestido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vestido {
+    width: 50px;
+    height: 50px;
+}

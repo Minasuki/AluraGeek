@@ -78,3 +78,18 @@
     background: #F5F5F5;
     border: 0;
 }
+
+/*  Login  */
+.login{
+
+}
+
+.btn{
+    width: 182px;
+height: 51px;
+padding: 16px;
+border:#2A7AE4 2px solid;
+gap: 10px;
+ color: #2A7AE4;
+ background-color: #ffffff;
+}

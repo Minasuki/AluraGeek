@@ -46,7 +46,7 @@ const pintarCardsM = (data) => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
         templateCard.querySelector('img').setAttribute('src', producto.image);
-        templateCard.querySelector('.btn-dark').dataset.id = producto.id;
+         templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaMujer) {
             const clone = templateCard.cloneNode(true);
@@ -63,7 +63,7 @@ const pintarCardsE = (data) => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
         templateCard.querySelector('img').setAttribute('src', producto.image);
-        templateCard.querySelector('.btn-dark').dataset.id = producto.id;
+        templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaElectronico) {
             const clone = templateCard.cloneNode(true);
@@ -80,7 +80,7 @@ const pintarCardsJ = (data) => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
         templateCard.querySelector('img').setAttribute('src', producto.image);
-        templateCard.querySelector('.btn-dark').dataset.id = producto.id;
+        templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaJoya) {
             const clone = templateCard.cloneNode(true);
@@ -97,7 +97,7 @@ const pintarCardsH = (data) => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
         templateCard.querySelector('img').setAttribute('src', producto.image);
-        templateCard.querySelector('.btn-dark').dataset.id = producto.id;
+        templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaHombre) {
             const clone = templateCard.cloneNode(true);

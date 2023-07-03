@@ -10,12 +10,24 @@ const cardsH = document.getElementById('cards__men');
 const templateCard = document.getElementById('template__card').content;
 const fragment = document.createDocumentFragment();
 
+const busquedalupa = document.getElementById('busqueda__lupa');
+const busquedaTexto = document.getElementById('busqueda__texto');
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
 })
 
+busquedaTexto.addEventListener('click', () => {
+    busquedalupa.classList.add('d-none')
+});
+
+busquedaTexto.addEventListener('blur', () => {
+    busquedalupa.classList.remove('d-none')
+});
+
 const fetchData = async () => {
     try {
+
         const res = await fetch('./js/products.json');
         const data = await res.json();
         //  console.log(data);
@@ -95,3 +107,12 @@ const pintarCardsH = (data) => {
     });
     cardsH.appendChild(fragment);
 };
+
+// const loadindData = estado => {
+//     const loading = document.getElementById('busqueda__lupa');
+//     if (estado) {
+//         loading.classList.remove('d-none');
+//     } else {
+//         loading.classList.add('d-none');
+//     }
+// };

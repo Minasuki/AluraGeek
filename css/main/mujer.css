@@ -1,7 +1,6 @@
-.categoria__mujeres{
- height: 306px;
- width: 100%;
- gap: 16px;   
- display: flex;
- flex-direction: column;
+.categoria__mujeres {
+    height: 420px;
+    width: 100%;
+    gap: 16px;
+
 }

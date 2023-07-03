@@ -1,0 +1,13 @@
+.img__card{
+    width: 176px;
+    height: 174px;
+   }
+
+   .template__card{
+    width: 202px;
+   }
+
+   .roww{
+    width: 202px;
+    display: flex;
+   }

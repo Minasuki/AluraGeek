@@ -110,3 +110,47 @@
     background-color: #ffffff;
     font-size: 18px;
 }
+
+@media (max-width:768px) {
+
+    .header__responsive {
+        width: 90%;
+    }
+
+    .vestido {
+        width: 28px;
+        height: 28px;
+    }
+
+    .alura {
+        font-size: large;
+        width: 45px;
+    }
+
+    .greek {
+        font-size: large;
+        width: 50px;
+    }
+
+    .busqueda {
+        width: 272px;
+    }
+
+    .texto__busqueda {
+        height: 40px;
+        bottom: 0px;
+    }
+
+    .lupa__busqueda {
+        width: 29px;
+        height: 29px;
+        top: 9px;
+    }
+
+    .login__btn {
+        width: 146px;
+        height: 40px;
+        font-size: 14px;
+        padding: 0;
+    }
+}

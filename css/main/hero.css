@@ -18,7 +18,7 @@
 .fondo__hero {
     position: absolute;
     top: 60%;
-    left: 29%;
+    left: 24%;
     transform: translate(-50%, -50%);
     gap: 16px;
     display: grid;

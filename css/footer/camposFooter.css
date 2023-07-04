@@ -1,0 +1,31 @@
+.campos__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 560px;
+    height: 100%;
+    gap: 8px;
+}
+
+.hable__footer {
+    color: #212529;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.input__footer {
+    width: 560px;
+    height: 56px;
+    gap: 8px;
+}
+
+.textArea__footer {
+    width: 560px;
+    height: 82px;
+    gap: 8px;
+}
+
+
+/*
+    La clase css del boton esta en la carpeta main, el css hero
+*/

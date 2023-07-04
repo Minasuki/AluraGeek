@@ -1,0 +1,12 @@
+.quienesSomos__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.quienesSomos__footer>a {
+    color: #464646;
+    text-decoration: none;
+}

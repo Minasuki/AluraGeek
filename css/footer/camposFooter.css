@@ -13,18 +13,61 @@
     font-size: 18px;
 }
 
-.input__footer {
-    width: 560px;
+.input {
     height: 56px;
-    gap: 8px;
+    padding: 25px 12px 12px 11px;
+}
+
+.single__input {
+    position: relative;
+}
+
+.single__input label {
+    font-size: 16px;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.single__input .input {
+    width: 100%;
+    color: rgb(150, 150, 150);
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+.single__input .input:focus,
+.single__input .input:valid {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.single__input .input:focus~label,
+.single__input .input:valid~label {
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: cornflowerblue;
 }
 
 .textArea__footer {
     width: 560px;
     height: 82px;
     gap: 8px;
+    border: 0;
+    padding: 12px 12px 12px 11px;
 }
 
+.textArea__footer:focus{
+    border: 0;
+    border-bottom: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+.textArea__footer:hover{
+    border: 0;
+}
 
 /*
     La clase css del boton esta en la carpeta main, el css hero

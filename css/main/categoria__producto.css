@@ -14,3 +14,10 @@
     margin-bottom: 3rem;
    }
 
+   @media (max-width:768px) {
+    
+    .categoria__productos{
+        margin-top: -75px;
+    }
+
+   }

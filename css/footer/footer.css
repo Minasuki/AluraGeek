@@ -70,3 +70,9 @@
     }
 
 }
+
+@media (max-width:360px) {
+    .footer{
+        margin: 0;
+    }
+}

@@ -103,12 +103,19 @@
    }
 
    .template__card {
-      width: 157px;
-      height: 252px;
+      width: 161px;
+      height: 275px;
    }
 
    .card__body>h5 {
       font-size: 13px;
+      margin: 0;
+      padding: 3px;
+   }
+
+   .card__body>p {
+      border: 0;
+      padding: 3px;
       margin: 0;
    }
 
@@ -118,9 +125,10 @@
 
    .btn__card {
       font-size: 13px;
+      padding: 3px;
    }
 
-   .img__card{
+   .img__card {
       width: 155px;
       height: 153px;
    }

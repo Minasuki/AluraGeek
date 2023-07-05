@@ -28,6 +28,7 @@
    display: flex;
    justify-content: space-between;
    align-items: stretch;
+   gap: 16px;
 }
 
 .card__merca {
@@ -56,24 +57,71 @@
    background-color: #ffffff;
    display: flex;
    align-items: center;
+   font-weight: bold;
 }
 
-.categoria__boton > h4{
+.categoria__boton>h4 {
    color: #464646;
    font-size: 32px;
 }
 
-.card__body{
+.card__body {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
 }
 
-.btn__card{
+.btn__card {
    border: 0;
    padding: 0;
    background-color: #ffffff;
    color: #2A7AE4;
    font-size: 16px;
    font-weight: bold;
+}
+
+@media (max-width:768px) {
+
+   .roww {
+      gap: 15px;
+   }
+
+   .categoria__boton {
+      width: 90%;
+   }
+
+   .categoria__boton>h4 {
+      font-size: 22px;
+   }
+
+   .categoria__btn {
+      font-size: 15px;
+   }
+
+   .tamanio__general {
+      width: 90%;
+   }
+
+   .template__card {
+      width: 157px;
+      height: 252px;
+   }
+
+   .card__body>h5 {
+      font-size: 13px;
+      margin: 0;
+   }
+
+   .card__body {
+      font-size: 13px;
+   }
+
+   .btn__card {
+      font-size: 13px;
+   }
+
+   .img__card{
+      width: 155px;
+      height: 153px;
+   }
 }

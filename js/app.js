@@ -13,9 +13,21 @@ const fragment = document.createDocumentFragment();
 const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
 
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
 })
+
+
+// if (screen.width < 769) {
+//     contadorWidth = 4;
+//     console.log('hola');
+//     if (screen.width < 361) {
+//         console.log('hola x2');
+//         contadorWidth = 2;
+//     }
+// }
+
 
 busquedaTexto.addEventListener('click', () => {
     busquedalupa.classList.add('d-none')
@@ -42,23 +54,49 @@ const fetchData = async () => {
 
 const pintarCardsM = (data) => {
     //console.log(data);
+    let contador = 0;
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
         templateCard.querySelector('img').setAttribute('src', producto.image);
-         templateCard.querySelector('.btn__card').dataset.id = producto.id;
+        templateCard.querySelector('.btn__card').dataset.id = producto.id;
+
+
+
 
         if (producto.category === categoriaMujer) {
-            const clone = templateCard.cloneNode(true);
-            fragment.appendChild(clone);
+            contador++;
+
+            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
+                if (contador <= 2) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
+
+            else if (screen.width < 769) {
+                if (contador <= 4) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
+
+            else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
         }
+
+
 
     });
     cardsMujer.appendChild(fragment);
+
 };
 
 const pintarCardsE = (data) => {
-    console.log(data);
+    //console.log(data);
+    let contador = 0;
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
@@ -66,16 +104,37 @@ const pintarCardsE = (data) => {
         templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaElectronico) {
-            const clone = templateCard.cloneNode(true);
-            fragment.appendChild(clone);
+            contador++;
+
+            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
+                if (contador <= 2) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
+
+            else if (screen.width < 769) {
+                if (contador <= 4) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
+
+            else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
         }
+
+
 
     });
     cardsE.appendChild(fragment);
 };
 
 const pintarCardsJ = (data) => {
-    console.log(data);
+    //console.log(data);
+    let contador = 0;
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
@@ -83,8 +142,17 @@ const pintarCardsJ = (data) => {
         templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaJoya) {
-            const clone = templateCard.cloneNode(true);
-            fragment.appendChild(clone);
+            contador++;
+
+            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
+                if (contador <= 2) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            } else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
         }
 
     });
@@ -92,7 +160,8 @@ const pintarCardsJ = (data) => {
 };
 
 const pintarCardsH = (data) => {
-    console.log(data);
+    //console.log(data);
+    let contador = 0;
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.title;
         templateCard.querySelector('p').textContent = producto.price;
@@ -100,8 +169,18 @@ const pintarCardsH = (data) => {
         templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
         if (producto.category === categoriaHombre) {
-            const clone = templateCard.cloneNode(true);
-            fragment.appendChild(clone);
+            contador++;
+
+            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
+                if (contador <= 2) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            } else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
+
         }
 
     });
@@ -116,3 +195,18 @@ const pintarCardsH = (data) => {
 //         loading.classList.add('d-none');
 //     }
 // };
+
+
+
+/*
+ document.getElementById("nav-links").className += "";
+
+Si lo que quieres es quitarle la clase deberias hacer:
+
+if (screen.width < 801) {
+document.getElementById("nav-links").className += "overlay-menu";
+} else {
+document.getElementById("nav-links").classList.remove("overlay-menu");
+}
+
+*/

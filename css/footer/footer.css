@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0;
+    margin-top: 22px;
     padding: 0;
 }
 
@@ -52,4 +52,21 @@
 .img__autor {
     text-align: justify;
     margin-bottom: 2rem;
+}
+
+@media (max-width:768px) {
+
+    .footer {
+        margin-top: -50px;
+    }
+
+    .responsive__footer {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .logo__footer{
+        padding: 5px 0px 11px 0px;
+    }
+
 }

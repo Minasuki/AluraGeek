@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 560px;
+    width: 50%;
     height: 100%;
     gap: 8px;
 }
@@ -72,3 +72,20 @@
 /*
     La clase css del boton esta en la carpeta main, el css hero
 */
+
+@media (max-width:768px) {
+    
+    .campos__footer{
+        width: 434px;
+    }
+
+    .single__input .input{
+        width: 100%;
+    }
+
+    .textArea__footer{
+        width: 100%;
+    }
+
+
+   }

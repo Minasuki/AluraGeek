@@ -10,3 +10,24 @@
     color: #464646;
     text-decoration: none;
 }
+
+.responsive__logoQuienes{
+    display: flex;
+    width: 42%;
+    justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    
+    .quienesSomos__footer {
+        width: 176px;
+        height: 74%;
+        margin-top: -6px;
+    }
+
+    .responsive__logoQuienes{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

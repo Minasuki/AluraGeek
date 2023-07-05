@@ -57,7 +57,7 @@
 @media (max-width:768px) {
 
     .footer {
-        margin-top: -50px;
+        margin-top: 0;
     }
 
     .responsive__footer {
@@ -74,5 +74,20 @@
 @media (max-width:360px) {
     .footer{
         margin: 0;
+        align-items: flex-start;
+        height: 100%;
     }
+    .responsive__footer{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        gap: 10px;
+    }
+    .logo__footer{
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
 }

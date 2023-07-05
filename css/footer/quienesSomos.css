@@ -11,23 +11,71 @@
     text-decoration: none;
 }
 
-.responsive__logoQuienes{
+.responsive__logoQuienes {
     display: flex;
     width: 42%;
     justify-content: space-between;
 }
 
 @media (max-width:768px) {
-    
+
     .quienesSomos__footer {
         width: 176px;
         height: 74%;
         margin-top: -6px;
     }
 
-    .responsive__logoQuienes{
-        display: flex;
+    .responsive__logoQuienes {
+        width: 35%;
         flex-direction: column;
+        align-items: flex-start;
     }
 
+    .logo__footer{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        align-items: center;
+    }
+    .logo__footer>.alura {
+        font-size: 30px;
+        width: 74px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo__footer>.greek {
+        font-size: 30px;
+        width: 63px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo__footer>.logo__vestido>img {
+        width: 40px;
+        height: 40px;
+    }
+.logo__busqueda__footer{
+    width: 70%;
+
+}
+
+}
+
+@media (max-width:360px) {
+    .quienesSomos__footer {
+        text-align: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .quienesSomos__footer>a {
+        font-size: 18px;
+    }
+.responsive__logoQuienes{
+    width: 100%;
+}
+    
 }

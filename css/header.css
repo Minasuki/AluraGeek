@@ -154,3 +154,39 @@
         padding: 0;
     }
 }
+
+@media (max-width:360px) {
+.vestido{
+    width: 22px;
+    height: 31px;
+}
+.alura{
+width: 33px;
+height: 31px;
+font-size: smaller;
+}
+
+.greek{
+width: 35px;
+height: 31px;
+font-size: smaller;
+}
+
+.texto__busqueda{
+    display: none;
+}
+
+.login__btn{
+    position: relative;
+    left: -63px;
+    width: 120px;
+}
+
+.lupa__busqueda{
+    width: 35px;
+    height: 35px;
+    left: 163px;
+    top: 7px;
+}
+
+}

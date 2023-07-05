@@ -36,6 +36,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   align-items: center;
 }
 
 .card__body>h5 {
@@ -63,6 +64,7 @@
 .categoria__boton>h4 {
    color: #464646;
    font-size: 32px;
+   font-weight: bold;
 }
 
 .card__body {
@@ -131,5 +133,24 @@
    .img__card {
       width: 155px;
       height: 153px;
+   }
+}
+
+@media (max-width:360px) {
+   .roww{
+      gap: 5px;
+      flex-wrap: wrap;
+   }
+   .template__card{
+      width: 159px;
+   }
+
+   .card__merca{
+      margin: 0;
+   }
+
+   .img__card{
+      width: 150px;
+      height: 148px;
    }
 }

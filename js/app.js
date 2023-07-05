@@ -61,20 +61,10 @@ const pintarCardsM = (data) => {
         templateCard.querySelector('img').setAttribute('src', producto.image);
         templateCard.querySelector('.btn__card').dataset.id = producto.id;
 
-
-
-
         if (producto.category === categoriaMujer) {
             contador++;
 
-            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
-                if (contador <= 2) {
-                    const clone = templateCard.cloneNode(true);
-                    fragment.appendChild(clone);
-                }
-            }
-
-            else if (screen.width < 769) {
+             if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
                 if (contador <= 4) {
                     const clone = templateCard.cloneNode(true);
                     fragment.appendChild(clone);
@@ -86,8 +76,6 @@ const pintarCardsM = (data) => {
                 fragment.appendChild(clone);
             }
         }
-
-
 
     });
     cardsMujer.appendChild(fragment);
@@ -106,24 +94,17 @@ const pintarCardsE = (data) => {
         if (producto.category === categoriaElectronico) {
             contador++;
 
-            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
-                if (contador <= 2) {
-                    const clone = templateCard.cloneNode(true);
-                    fragment.appendChild(clone);
-                }
-            }
+            if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
+               if (contador <= 4) {
+                   const clone = templateCard.cloneNode(true);
+                   fragment.appendChild(clone);
+               }
+           }
 
-            else if (screen.width < 769) {
-                if (contador <= 4) {
-                    const clone = templateCard.cloneNode(true);
-                    fragment.appendChild(clone);
-                }
-            }
-
-            else {
-                const clone = templateCard.cloneNode(true);
-                fragment.appendChild(clone);
-            }
+           else {
+               const clone = templateCard.cloneNode(true);
+               fragment.appendChild(clone);
+           }
         }
 
 
@@ -144,15 +125,17 @@ const pintarCardsJ = (data) => {
         if (producto.category === categoriaJoya) {
             contador++;
 
-            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
-                if (contador <= 2) {
-                    const clone = templateCard.cloneNode(true);
-                    fragment.appendChild(clone);
-                }
-            } else {
-                const clone = templateCard.cloneNode(true);
-                fragment.appendChild(clone);
-            }
+            if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
+               if (contador <= 4) {
+                   const clone = templateCard.cloneNode(true);
+                   fragment.appendChild(clone);
+               }
+           }
+
+           else {
+               const clone = templateCard.cloneNode(true);
+               fragment.appendChild(clone);
+           }
         }
 
     });
@@ -171,16 +154,17 @@ const pintarCardsH = (data) => {
         if (producto.category === categoriaHombre) {
             contador++;
 
-            if (screen.width < 361) {// el contador se iguala al numero de columnas que se mostraran
-                if (contador <= 2) {
-                    const clone = templateCard.cloneNode(true);
-                    fragment.appendChild(clone);
-                }
-            } else {
-                const clone = templateCard.cloneNode(true);
-                fragment.appendChild(clone);
-            }
+            if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
+               if (contador <= 4) {
+                   const clone = templateCard.cloneNode(true);
+                   fragment.appendChild(clone);
+               }
+           }
 
+           else {
+               const clone = templateCard.cloneNode(true);
+               fragment.appendChild(clone);
+           }
         }
 
     });

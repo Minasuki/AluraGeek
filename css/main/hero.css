@@ -71,3 +71,28 @@
         padding: 0;
     }
 }
+
+@media (max-width:360px) {
+    .texto__hero__1{
+        font-size: 20px;
+    }
+    .texto__hero__2{
+        font-size: 14px;
+    }
+    .boton__hero{
+        font-size: 14px;
+        width: 100px;
+        height: 33px;
+    }
+
+    .fondo__hero{
+        gap: 0;
+        top: 39%;
+        left: 50%;
+        width: 90%;
+    }
+
+    .hero{
+        height: 145px;
+    }
+}

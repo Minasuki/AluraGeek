@@ -18,17 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchData();
 })
 
-
-// if (screen.width < 769) {
-//     contadorWidth = 4;
-//     console.log('hola');
-//     if (screen.width < 361) {
-//         console.log('hola x2');
-//         contadorWidth = 2;
-//     }
-// }
-
-
 busquedaTexto.addEventListener('click', () => {
     busquedalupa.classList.add('d-none')
 });

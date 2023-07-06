@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main/hero.css">
-    <link rel="stylesheet" href="css/main/categoria.css">
-    <link rel="stylesheet" href="css/main/categoria__producto.css">
-    <link rel="stylesheet" href="css/footer/camposFooter.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
-    <link rel="stylesheet" href="css/footer/quienesSomos.css">
+    <link rel="stylesheet" href="css/index/header.css">
+    <link rel="stylesheet" href="css/index/main/hero.css">
+    <link rel="stylesheet" href="css/index/main/categoria.css">
+    <link rel="stylesheet" href="css/index/main/categoria__producto.css">
+    <link rel="stylesheet" href="css/index/footer/camposFooter.css">
+    <link rel="stylesheet" href="css/index/footer/footer.css">
+    <link rel="stylesheet" href="css/index/footer/quienesSomos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -27,8 +27,7 @@
 
                 <div class="logo">
                     <div class="logo__vestido">
-                        <img src="img/svg/vestido.svg" alt="Logo del sitio"
-                            class="vestido">
+                        <img src="img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
                     </div>
                     <p class="alura">Alura</p>
                     <p class="greek">Greek</p>
@@ -43,7 +42,10 @@
             </div>
 
             <div class="login">
-                <button class="login__btn" id="btn__login" name="boton para hacer login" type="button">Login</button>
+                <a href="html/login.html">
+                    <button class="login__btn" id="btn__login" name="boton para hacer login"
+                        type="button">Login</button>
+                </a>
             </div>
 
         </div>
@@ -147,34 +149,33 @@
     <footer class="footer">
 
         <section class="responsive__footer">
-    
-                <div class="responsive__logoQuienes">
-                    <section class="logo__footer">
 
-                        <div class="logo__busqueda logo__busqueda__footer">
-    
-                            <div class="logo logo__footer">
-                                <div class="logo__vestido">
-                                    <img src="img/svg/vestido.svg"
-                                        alt="Logo del sitio" class="vestido">
-                                </div>
-                                <p class="alura">Alura</p>
-                                <p class="greek">Greek</p>
+            <div class="responsive__logoQuienes">
+                <section class="logo__footer">
+
+                    <div class="logo__busqueda logo__busqueda__footer">
+
+                        <div class="logo logo__footer">
+                            <div class="logo__vestido">
+                                <img src="img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
                             </div>
-    
+                            <p class="alura">Alura</p>
+                            <p class="greek">Greek</p>
                         </div>
-    
-                    </section>
-    
-                    <section class="quienesSomos__footer">
-                        <a href="#">Quienes Somos</a>
-                        <a href="#">Politica de Privacidad</a>
-                        <a href="#">Programa de fidelidad</a>
-                        <a href="#">Nuestras Tiendas</a>
-                        <a href="#">Quiero ser franquiciado</a>
-                        <a href="#">Anúncie aqui</a>
-                    </section>
-                </div>
+
+                    </div>
+
+                </section>
+
+                <section class="quienesSomos__footer">
+                    <a href="#">Quienes Somos</a>
+                    <a href="#">Politica de Privacidad</a>
+                    <a href="#">Programa de fidelidad</a>
+                    <a href="#">Nuestras Tiendas</a>
+                    <a href="#">Quiero ser franquiciado</a>
+                    <a href="#">Anúncie aqui</a>
+                </section>
+            </div>
 
             <section class="campos__footer">
                 <label class="hable__footer">Hable con nosotros</label>

@@ -52,3 +52,9 @@
     color: #464646;
         text-decoration: none;
 }
+
+.section__login>form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}

@@ -64,6 +64,6 @@ formulario.addEventListener('submit', e => {
 
     console.log('Formulario enviado con éxito');
 
-    location.href = '../index.html';
+    location.href = '../html/productos.html';
 
 });

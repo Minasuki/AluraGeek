@@ -19,19 +19,28 @@
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10%;
+    color: #464646;
 }
 
 .email__login {
     width: 432px;
     height: 64px;
+    border: 0;
+    border-bottom: 1.8px gray solid;
 }
 
 .contraseña__login {
     width: 432px;
     height: 64px;
+    border: 0;
+    border-bottom: 1.8px gray solid;
 }
 
 .entrar__btn {
     width: 432px;
     height: 64px;
+    background-color: #2A7AE4;
+    color: #f5f5f5;
+    font-size: x-large;
+    border: 0;
 }

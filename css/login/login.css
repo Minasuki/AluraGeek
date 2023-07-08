@@ -59,22 +59,66 @@
     flex-direction: column;
 }
 
+.boton__hero {
+    background-color: #a972cb;
+    color: #ffffff;
+    border: 0;
+    width: 152px;
+    height: 51px;
+    padding: 12px;
+    gap: 10px;
+    font-size: 18px;
+}
+
 @media (max-width:768px) {
     .iniciarSesion>p {
         font-size: 20px;
     }
     .email__login{
-        width: 275px;
+        width: 100%;
+    }
+    .contraseña__login{
+        width: 100%;
     }
     .entrar__btn{
-        width: 50%;
+        width: 45%;
         height: 60px;
     }
     .section__login>form{
-        width: 40%;
+        width: 50%;
     }
-    .botton__login{
+    .boton__login{
         display: flex;
         justify-content: center;
+    }
+    .boton__hero {
+        font-size: 14px;
+        width: 118px;
+        height: 40px;
+        padding: 0;
+    }
+}
+
+@media (max-width:360px) {
+    .boton__hero{
+        font-size: 14px;
+        width: 45%;
+        height: 43px;
+    }
+    .texto__busqueda{
+        display: none;
+    }
+    .logo{
+        width: 123px;
+    }
+    .section__login>form{
+        width: 77%;
+    }
+    .entrar__btn{
+        height: 50px;
+    }
+    .section__login{
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 }

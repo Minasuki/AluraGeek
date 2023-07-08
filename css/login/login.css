@@ -58,3 +58,23 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width:768px) {
+    .iniciarSesion>p {
+        font-size: 20px;
+    }
+    .email__login{
+        width: 275px;
+    }
+    .entrar__btn{
+        width: 50%;
+        height: 60px;
+    }
+    .section__login>form{
+        width: 40%;
+    }
+    .botton__login{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -12,7 +12,7 @@ const fragment = document.createDocumentFragment();
 
 const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
-
+const btnLogin = document.getElementById('btn__login');
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
@@ -26,6 +26,8 @@ busquedaTexto.addEventListener('blur', () => {
     busquedalupa.classList.remove('d-none')
 });
 
+
+
 const fetchData = async () => {
     try {
 
@@ -36,6 +38,7 @@ const fetchData = async () => {
         pintarCardsE(data);
         pintarCardsJ(data);
         pintarCardsH(data);
+            borrarBoton();
     } catch (error) {
         console.log(error);
     }
@@ -53,7 +56,7 @@ const pintarCardsM = (data) => {
         if (producto.category === categoriaMujer) {
             contador++;
 
-             if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
+            if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
                 if (contador <= 4) {
                     const clone = templateCard.cloneNode(true);
                     fragment.appendChild(clone);
@@ -84,16 +87,16 @@ const pintarCardsE = (data) => {
             contador++;
 
             if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
-               if (contador <= 4) {
-                   const clone = templateCard.cloneNode(true);
-                   fragment.appendChild(clone);
-               }
-           }
+                if (contador <= 4) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
 
-           else {
-               const clone = templateCard.cloneNode(true);
-               fragment.appendChild(clone);
-           }
+            else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
         }
 
 
@@ -115,16 +118,16 @@ const pintarCardsJ = (data) => {
             contador++;
 
             if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
-               if (contador <= 4) {
-                   const clone = templateCard.cloneNode(true);
-                   fragment.appendChild(clone);
-               }
-           }
+                if (contador <= 4) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
 
-           else {
-               const clone = templateCard.cloneNode(true);
-               fragment.appendChild(clone);
-           }
+            else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
         }
 
     });
@@ -144,21 +147,41 @@ const pintarCardsH = (data) => {
             contador++;
 
             if (screen.width < 769) {// el contador se iguala al numero de columnas que se mostraran
-               if (contador <= 4) {
-                   const clone = templateCard.cloneNode(true);
-                   fragment.appendChild(clone);
-               }
-           }
+                if (contador <= 4) {
+                    const clone = templateCard.cloneNode(true);
+                    fragment.appendChild(clone);
+                }
+            }
 
-           else {
-               const clone = templateCard.cloneNode(true);
-               fragment.appendChild(clone);
-           }
+            else {
+                const clone = templateCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
         }
 
     });
     cardsH.appendChild(fragment);
 };
+
+
+const borrarBoton = () => {
+
+    if (screen.width < 361) {
+        
+        busquedaTexto.classList.add('d-none');
+        busquedalupa.addEventListener('click', () => {
+            busquedaTexto.classList.remove('d-none');
+            btnLogin.classList.add('d-none');
+            busquedalupa.classList.add('d-none');
+        });
+        
+        busquedaTexto.addEventListener('blur', () => {
+            busquedaTexto.classList.add('d-none');
+            btnLogin.classList.remove('d-none');
+            busquedalupa.classList.remove('d-none');
+        });
+    }
+}
 
 // const loadindData = estado => {
 //     const loading = document.getElementById('busqueda__lupa');

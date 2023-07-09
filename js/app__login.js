@@ -12,6 +12,10 @@ const alertContraseña = document.getElementById('alertContraseña');
 
 const regUserCorreo = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
 const regUserContraseña = /[a-z0-9]$/;
+
+const busquedalupa = document.getElementById('busqueda__lupa');
+const busquedaTexto = document.getElementById('busqueda__texto');
+
 /*
 const pintarMensajeExito = () => {
     alertSuccess.classList.remove('d-none');
@@ -25,8 +29,14 @@ const pintarMensajeErrores = (errores) => {
     });
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+    borrarBoton();
+})
+
 formulario.addEventListener('submit', e => {
     e.preventDefault();
+    
+    
 
     const errores = [];
 
@@ -67,3 +77,20 @@ formulario.addEventListener('submit', e => {
     location.href = '../html/productos.html';
 
 });
+
+const borrarBoton = () => {
+
+    if (screen.width < 361) {
+        
+        busquedaTexto.classList.add('d-none');
+        busquedalupa.addEventListener('click', () => {
+            busquedaTexto.classList.remove('d-none');
+            busquedalupa.classList.add('d-none');
+        });
+        
+        busquedaTexto.addEventListener('blur', () => {
+            busquedaTexto.classList.add('d-none');
+            busquedalupa.classList.remove('d-none');
+        });
+    }
+}

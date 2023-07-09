@@ -1,8 +1,9 @@
-.roww__productos{
+.roww__productos {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.categoria__productos__total{
+
+.categoria__productos__total {
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -10,13 +11,18 @@
     flex-direction: column;
 }
 
-.delete{
+.delete {
     width: 24px;
     height: 24px;
 }
 
-.vector{
+.vector {
     width: 24px;
     height: 24px;
     background-color: black;
+}
+
+.logo__busqueda>a {
+    color: #464646;
+    text-decoration: none;
 }

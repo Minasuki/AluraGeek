@@ -1,0 +1,22 @@
+.roww__productos{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.categoria__productos__total{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    flex-direction: column;
+}
+
+.delete{
+    width: 24px;
+    height: 24px;
+}
+
+.vector{
+    width: 24px;
+    height: 24px;
+    background-color: black;
+}

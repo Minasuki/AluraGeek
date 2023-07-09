@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/index/footer/camposFooter.css">
     <link rel="stylesheet" href="../css/index/footer/footer.css">
     <link rel="stylesheet" href="../css/index/footer/quienesSomos.css">
+    <link rel="stylesheet" href="../css/productos/productos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -25,14 +26,16 @@
 
             <div class="logo__busqueda">
 
-                <div class="logo">
-                    <div class="logo__vestido">
-                        <img src="../img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
-                    </div>
-                    <p class="alura">Alura</p>
-                    <p class="greek">Greek</p>
-                </div>
+                <a href="../index.html">
 
+                    <div class="logo">
+                        <div class="logo__vestido">
+                            <img src="../img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
+                        </div>
+                        <p class="alura">Alura</p>
+                        <p class="greek">Greek</p>
+                    </div>
+                </a>
                 <div class="busqueda">
 
                     <input type="text" class="texto__busqueda" id="busqueda__texto" placeholder="¿Qué deseas buscar?">
@@ -47,15 +50,16 @@
 
     <main>
 
-        <section class="categoria__productos">
+        <section class="categoria__productos categoria__productos__total">
             <!-- Aqui se va a meter el template -->
 
             <div class="categoria__titulo">
                 <h4>Todos los productos</h4>
+                <button>Agregar Producto</button>
             </div>
 
-            <div class="tamanio__general">
-                <div class="roww" id="cards__total"></div>
+            <div class="tamanio__general tamanio__general__productos">
+                <div class="roww roww__productos" id="cards__total"></div>
             </div>
 
             <!-- ///////////////////////////////////////////////////////////////////// -->
@@ -133,13 +137,15 @@
 
     <!-- template para pintar los productos con su titulo, precio, etc. -->
     <template id="template__card">
-        <div class="template__card">
-            <div class="card__merca">
+        <div class="template__card template__card__productos">
+            <div class="card__merca card__merca__productos">
                 <img src="" alt="" class="img__card">
-                <div class="card__body">
+                <img src="../img/svg/delete.svg" alt="Imagen del bote de basura" class="delete">
+                <img src="../img/svg/vector.svg" alt="Imagen del la plumita para editar" class="vector">
+                <div class="card__body card__body__productos">
                     <h5>Titulo</h5>
                     <p>precio</p>
-                    <button class="btn__card">Ver Producto</button>
+                    <p>#11111</p>
                 </div>
             </div>
         </div>

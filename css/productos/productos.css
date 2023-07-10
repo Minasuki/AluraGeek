@@ -11,18 +11,58 @@
     flex-direction: column;
 }
 
+.img__card__productos {
+    position: relative;
+    outline: none;
+    z-index: -1;
+}
+
 .delete {
-    width: 24px;
-    height: 24px;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    top: -238px;
+    left: 55px;
 }
 
 .vector {
-    width: 24px;
-    height: 24px;
-    background-color: black;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    top: -275px;
+    left: 110px;
 }
 
 .logo__busqueda>a {
     color: #464646;
     text-decoration: none;
+}
+
+.card__merca__productos {
+    width: 95%;
+}
+
+.imagenes__productos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.template__card__productos{
+    height: 450px;
+}
+
+.card__body__productos{
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card__body__productos>h5 {
+    width: 100%;
+    margin: 0;
+}
+
+.card__body__productos>p {
+    margin: 0;
 }

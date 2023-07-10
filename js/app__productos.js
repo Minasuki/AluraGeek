@@ -2,6 +2,7 @@ const TotalCategoria = 'categoria__productos';
 
 const cardsTotal = document.getElementById('cards__total');
 
+const productosBtn = document.getElementById('productos__btn');
 
 const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
@@ -46,3 +47,8 @@ const pintarCards = (data) => {
     cardsTotal.appendChild(fragment);
 
 };
+
+productosBtn.addEventListener('click',()=>{
+
+    location.href = '../html/agregarProducto.html';
+});

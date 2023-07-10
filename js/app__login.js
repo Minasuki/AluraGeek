@@ -16,6 +16,14 @@ const regUserContraseña = /[a-z0-9]$/;
 const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
 
+busquedaTexto.addEventListener('click', () => {
+    busquedalupa.classList.add('d-none')
+});
+
+busquedaTexto.addEventListener('blur', () => {
+    busquedalupa.classList.remove('d-none')
+});
+
 /*
 const pintarMensajeExito = () => {
     alertSuccess.classList.remove('d-none');

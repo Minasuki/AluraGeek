@@ -9,6 +9,34 @@ const busquedaTexto = document.getElementById('busqueda__texto');
 const templateCard = document.getElementById('template__card').content;
 const fragment = document.createDocumentFragment();
 
+/////////////////////////////////////////////////////////////////////////
+/*const formulario = document.getElementById('formulario');
+
+formulario.addEventListener('submit', (e)=>{
+    e.preventDefault();
+
+const inputs = new FormData(formulario);
+
+for (let item of inputs) {
+    console.log(item);
+}
+
+console.log(inputs.get('titulo'));
+
+
+    console.log('procesando formulario');
+    
+    // location.href = '../html/productos.html';
+    // SegundoFragment();
+})*/
+
+// const nuevo__btn = document.getElementById('nuevo__btn');
+
+/*nuevo__btn.addEventListener('click', () => {
+    location.href = '../html/productos.html';
+    SegundoFragment();
+});*/
+
 busquedaTexto.addEventListener('click', () => {
     busquedalupa.classList.add('d-none')
 });
@@ -44,11 +72,32 @@ const pintarCards = (data) => {
         fragment.appendChild(clone);
 
     });
+    
+    let jason = localStorage.getItem('nuevos');
+    if(jason !== null) {
+
+        jason = JSON.parse(localStorage.getItem('nuevos')).forEach(
+           producto => {
+               templateCard.querySelector('h5').textContent = producto.title;
+               templateCard.querySelector('p').textContent = producto.price;
+               templateCard.querySelector('img').setAttribute('src', producto.image);
+       
+               const clone = templateCard.cloneNode(true);
+               fragment.appendChild(clone);
+       
+           }   
+       );
+    }
+
+
     cardsTotal.appendChild(fragment);
 
 };
 
-productosBtn.addEventListener('click',()=>{
+productosBtn.addEventListener('click', () => {
 
     location.href = '../html/agregarProducto.html';
 });
+
+
+//console.log(jason);

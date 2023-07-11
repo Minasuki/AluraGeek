@@ -90,3 +90,65 @@
     font-size: 17px;
     border: 0;
 }
+@media (max-width:768px) {
+    .template__card__productos{
+        height: 345px;
+    }
+
+    .delete{
+        width: 24px;
+        height: 24px;
+        top: -153px;
+        left: 32px;
+    }
+
+    .vector{
+        width: 28px;
+        height: 28px;
+        top: -176px;
+        left: 60px;
+    }
+
+    .categoria__titulo>button{
+        width: 25%;
+    }
+    
+}
+
+@media (max-width:360px) {
+    .header__responsive{
+        width: 95%;
+    }
+    .busqueda{
+        width: 123px;
+    }
+
+    .lupa__busqueda{
+        left: 75px;
+    }
+    .categoria__titulo>h4{
+        font-size: 22px;
+    }
+    .categoria__titulo{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 92px;
+        margin-bottom: 3%;
+    }
+
+    .categoria__titulo>button{
+        width: 50%;
+    }
+
+    .template__card__productos{
+        height: 307px;
+    }
+
+    .delete{
+        top: -140px;
+    }
+
+    .vector{
+        top: -164px;
+    }
+}

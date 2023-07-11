@@ -9,34 +9,6 @@ const busquedaTexto = document.getElementById('busqueda__texto');
 const templateCard = document.getElementById('template__card').content;
 const fragment = document.createDocumentFragment();
 
-/////////////////////////////////////////////////////////////////////////
-/*const formulario = document.getElementById('formulario');
-
-formulario.addEventListener('submit', (e)=>{
-    e.preventDefault();
-
-const inputs = new FormData(formulario);
-
-for (let item of inputs) {
-    console.log(item);
-}
-
-console.log(inputs.get('titulo'));
-
-
-    console.log('procesando formulario');
-    
-    // location.href = '../html/productos.html';
-    // SegundoFragment();
-})*/
-
-// const nuevo__btn = document.getElementById('nuevo__btn');
-
-/*nuevo__btn.addEventListener('click', () => {
-    location.href = '../html/productos.html';
-    SegundoFragment();
-});*/
-
 busquedaTexto.addEventListener('click', () => {
     busquedalupa.classList.add('d-none')
 });
@@ -47,6 +19,7 @@ busquedaTexto.addEventListener('blur', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
+    borrarBoton();
 });
 
 const fetchData = async () => {
@@ -99,5 +72,19 @@ productosBtn.addEventListener('click', () => {
     location.href = '../html/agregarProducto.html';
 });
 
+const borrarBoton = () => {
 
-//console.log(jason);
+    if (screen.width < 361) {
+        
+        busquedaTexto.classList.add('d-none');
+        busquedalupa.addEventListener('click', () => {
+            busquedaTexto.classList.remove('d-none');
+            busquedalupa.classList.add('d-none');
+        });
+        
+        busquedaTexto.addEventListener('blur', () => {
+            busquedaTexto.classList.add('d-none');
+            busquedalupa.classList.remove('d-none');
+        });
+    }
+}

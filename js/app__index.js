@@ -38,7 +38,7 @@ const fetchData = async () => {
         pintarCardsE(data);
         pintarCardsJ(data);
         pintarCardsH(data);
-            borrarBoton();
+        borrarBoton();
     } catch (error) {
         console.log(error);
     }
@@ -166,43 +166,24 @@ const pintarCardsH = (data) => {
 
 const borrarBoton = () => {
 
-    if (screen.width < 361) {
-        
+    let ancho = window.innerWidth;
+    console.log(ancho);
+
+     if (ancho < 380) {
+
         busquedaTexto.classList.add('d-none');
         busquedalupa.addEventListener('click', () => {
             busquedaTexto.classList.remove('d-none');
             btnLogin.classList.add('d-none');
             busquedalupa.classList.add('d-none');
         });
-        
+
         busquedaTexto.addEventListener('blur', () => {
             busquedaTexto.classList.add('d-none');
             btnLogin.classList.remove('d-none');
             busquedalupa.classList.remove('d-none');
         });
     }
+
+
 }
-
-// const loadindData = estado => {
-//     const loading = document.getElementById('busqueda__lupa');
-//     if (estado) {
-//         loading.classList.remove('d-none');
-//     } else {
-//         loading.classList.add('d-none');
-//     }
-// };
-
-
-
-/*
- document.getElementById("nav-links").className += "";
-
-Si lo que quieres es quitarle la clase deberias hacer:
-
-if (screen.width < 801) {
-document.getElementById("nav-links").className += "overlay-menu";
-} else {
-document.getElementById("nav-links").classList.remove("overlay-menu");
-}
-
-*/

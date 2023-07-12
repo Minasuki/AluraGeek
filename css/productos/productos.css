@@ -1,7 +1,6 @@
 .roww__productos {
     flex-wrap: wrap;
     justify-content: start;
-    gap: 20px;
 }
 
 .categoria__productos__total {

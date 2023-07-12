@@ -91,4 +91,8 @@
     .busqueda__texto__agregar{
         left: 97px;
     }
+
+    .header__responsive{
+        justify-content: flex-start;
+    }
 }

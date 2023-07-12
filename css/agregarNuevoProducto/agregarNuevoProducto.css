@@ -79,4 +79,8 @@
     .logo__busqueda__agregar{
         width: 40%;
     }
+
+    .lavel__nuevo{
+        font-size: 22px;
+    }
 }

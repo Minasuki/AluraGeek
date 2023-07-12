@@ -55,4 +55,11 @@
         width: 144px;
         height: 40px;
     }
+    .lavel__nuevo{
+        width: 90%;
+    }
+
+    .from__nuevo{
+        width: 90%;
+    }
 }

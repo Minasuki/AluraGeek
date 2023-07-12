@@ -62,4 +62,9 @@
     .from__nuevo{
         width: 90%;
     }
+
+    .agregar__a{
+        display: flex;
+        align-items: center;
+    }
 }

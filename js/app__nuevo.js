@@ -11,6 +11,10 @@ busquedaTexto.addEventListener('blur', () => {
     busquedalupa.classList.remove('d-none')
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    borrarBoton();
+});
+
 /////////////////////////////////////////////////////////////////////////
 btnAgregar.addEventListener('click', () => {
 
@@ -40,3 +44,22 @@ btnAgregar.addEventListener('click', () => {
 //'https://media.istockphoto.com/id/184099391/es/foto/servicio-de-toallas.webp?s=2048x2048&w=is&k=20&c=iwtqVPbMG9L5cn2_m7EvzQgbcZjpFzE2IuPzppJP9FI=',
 //'https://media.istockphoto.com/id/1153357919/es/foto/calcetines-de-invierno-c%C3%A1lidos-para-ni%C3%B1os-ropa-de-algod%C3%B3n-lindo.webp?s=2048x2048&w=is&k=20&c=SzhDZWd_IXfZsuBboUKp2iGFOsyk5n3Vefs0OSEayBs='
 //https://img.freepik.com/foto-gratis/polo-abierto-blanco_125540-1499.jpg?w=900&t=st=1689060245~exp=1689060845~hmac=8d56d8489fb419077ef641a36b41a677a409ab9f3b3c4312edd73544f7a374d3
+
+const borrarBoton = () => {
+    let ancho = window.innerWidth;
+    console.log(ancho);
+
+     if (ancho < 390) {
+        
+        busquedaTexto.classList.add('d-none');
+        busquedalupa.addEventListener('click', () => {
+            busquedaTexto.classList.remove('d-none');
+            busquedalupa.classList.add('d-none');
+        });
+        
+        busquedaTexto.addEventListener('blur', () => {
+            busquedaTexto.classList.add('d-none');
+            busquedalupa.classList.remove('d-none');
+        });
+    }
+}

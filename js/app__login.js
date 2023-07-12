@@ -39,7 +39,7 @@ const pintarMensajeErrores = (errores) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     borrarBoton();
-})
+});
 
 formulario.addEventListener('submit', e => {
     e.preventDefault();

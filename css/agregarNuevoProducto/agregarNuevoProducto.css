@@ -70,13 +70,13 @@
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:361px) {
     .btn__menu__admi{
         width: 166px;
         font-size: 14px;
     }
 
-    .logo__busqueda__agregar{
+    .logo__busqueda{
         width: 40%;
     }
 

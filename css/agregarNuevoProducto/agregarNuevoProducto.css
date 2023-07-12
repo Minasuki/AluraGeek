@@ -37,3 +37,7 @@
     font-size: 32px;
     font-weight: bold;
 }
+
+.logo__busqueda>a,.logo__busqueda__footer>a{
+    text-decoration: none;
+}

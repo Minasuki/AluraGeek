@@ -86,6 +86,12 @@
         display: flex;
         align-items: center;
     }
+
+    .lupa__busqueda__agregar{
+        width: 29px;
+        height: 29px;
+        left: 232px;
+    }
 }
 
 @media (max-width:360px) {

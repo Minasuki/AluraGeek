@@ -1,5 +1,4 @@
 .roww__productos {
-    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -99,6 +98,11 @@
 
 
 @media (max-width:768px) {
+
+    .categoria__titulo{
+        width: 90%;
+    }
+
     .template__card__productos{
         height: 345px;
     }
@@ -106,15 +110,13 @@
     .delete{
         width: 24px;
         height: 24px;
-        top: -153px;
-        left: 32px;
+        top: -145px;
     }
 
     .vector{
         width: 28px;
         height: 28px;
-        top: -176px;
-        left: 60px;
+        top: -145px;
     }
 
     .categoria__titulo>button{

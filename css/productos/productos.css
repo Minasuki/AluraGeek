@@ -45,6 +45,7 @@
 
 .card__merca__productos {
     width: 95%;
+    height: 95%;
 }
 
 .imagenes__productos {
@@ -55,7 +56,7 @@
 }
 
 .template__card__productos {
-    height: 450px;
+    height: 380px;
 }
 
 .card__body__productos {

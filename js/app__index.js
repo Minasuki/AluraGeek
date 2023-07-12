@@ -14,6 +14,9 @@ const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
 const btnLogin = document.getElementById('btn__login');
 
+const btnVerTodo = [...document.querySelectorAll('button.btn__Ver__todo')];
+//const titleQuestions = [...document.querySelectorAll('.questions__title')];
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
 })
@@ -25,7 +28,16 @@ busquedaTexto.addEventListener('click', () => {
 busquedaTexto.addEventListener('blur', () => {
     busquedalupa.classList.remove('d-none')
 });
+/*
+titleQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            */
 
+btnVerTodo.forEach(valor => {
+    valor.addEventListener('click', () => {
+        location.href = '/html/login.html';
+    })
+})
 
 
 const fetchData = async () => {
@@ -169,7 +181,7 @@ export const borrarBoton = () => {
     let ancho = window.innerWidth;
     console.log(ancho);
 
-     if (ancho < 385) {
+    if (ancho < 385) {
 
         busquedaTexto.classList.add('d-none');
         busquedalupa.addEventListener('click', () => {

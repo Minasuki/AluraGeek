@@ -64,6 +64,11 @@
     align-items: center;
 }
 
+.busqueda__agregar{
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width:768px) {
     .btn__menu__admi{
         width: 144px;

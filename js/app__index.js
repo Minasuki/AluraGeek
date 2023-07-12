@@ -164,12 +164,12 @@ const pintarCardsH = (data) => {
 };
 
 
-const borrarBoton = () => {
+export const borrarBoton = () => {
 
     let ancho = window.innerWidth;
     console.log(ancho);
 
-     if (ancho < 380) {
+     if (ancho < 385) {
 
         busquedaTexto.classList.add('d-none');
         busquedalupa.addEventListener('click', () => {

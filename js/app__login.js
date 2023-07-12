@@ -87,8 +87,10 @@ formulario.addEventListener('submit', e => {
 });
 
 const borrarBoton = () => {
+    let ancho = window.innerWidth;
+    console.log(ancho);
 
-    if (screen.width < 361) {
+     if (ancho < 390) {
         
         busquedaTexto.classList.add('d-none');
         busquedalupa.addEventListener('click', () => {
@@ -102,3 +104,4 @@ const borrarBoton = () => {
         });
     }
 }
+

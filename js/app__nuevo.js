@@ -49,9 +49,8 @@ const borrarBoton = () => {
     let ancho = window.innerWidth;
     console.log(ancho);
 
-    busquedaTexto.classList.add('d-none');
-     if (ancho < 390) {
-        
+    if (ancho < 390) {
+        busquedaTexto.classList.add('d-none');
         busquedalupa.addEventListener('click', () => {
             busquedaTexto.classList.remove('d-none');
             busquedalupa.classList.add('d-none');

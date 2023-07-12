@@ -49,3 +49,10 @@
     color: #2A7AE4;
     border: 2px #2A7AE4 solid;
 }
+
+@media (max-width:768px) {
+    .btn__menu__admi{
+        width: 144px;
+        height: 40px;
+    }
+}

@@ -50,6 +50,16 @@
     border: 2px #2A7AE4 solid;
 }
 
+.lupa__busqueda__agregar{
+    width: 55px;
+    height: 50px;
+    border: 0px;
+    position: relative;
+    top: 5px;
+    left: 384px;
+    color: #d7d7d7;
+}
+
 @media (max-width:768px) {
     .btn__menu__admi{
         width: 144px;

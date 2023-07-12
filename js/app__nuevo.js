@@ -46,6 +46,7 @@ btnAgregar.addEventListener('click', () => {
 //https://img.freepik.com/foto-gratis/polo-abierto-blanco_125540-1499.jpg?w=900&t=st=1689060245~exp=1689060845~hmac=8d56d8489fb419077ef641a36b41a677a409ab9f3b3c4312edd73544f7a374d3
 
 const borrarBoton = () => {
+    busquedaTexto.classList.remove('d-none');
     if (screen.width < 361) {
         busquedaTexto.classList.add('d-none');
         busquedalupa.addEventListener('click', () => {

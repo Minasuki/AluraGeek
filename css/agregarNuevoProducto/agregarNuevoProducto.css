@@ -97,7 +97,10 @@
         justify-content: flex-start;
     }
 
-    .lupa__busqueda{
+    .lupa__busqueda__agregar{
+        width: 35px;
+        height: 35px;
         left: 94px;
+        top: 0;
     }
 }

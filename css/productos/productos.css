@@ -17,20 +17,25 @@
     z-index: -1;
 }
 
+.imagenes__productos__DV{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+}
+
 .delete {
     width: 38px;
     height: 38px;
     position: relative;
-    top: -238px;
-    left: 55px;
+    top: -188px;
+    margin-right: 3px;
 }
 
 .vector {
     width: 42px;
     height: 42px;
     position: relative;
-    top: -275px;
-    left: 110px;
+    top: -188px;
 }
 
 .logo__busqueda>a {
@@ -90,6 +95,9 @@
     font-size: 17px;
     border: 0;
 }
+
+
+
 @media (max-width:768px) {
     .template__card__productos{
         height: 345px;

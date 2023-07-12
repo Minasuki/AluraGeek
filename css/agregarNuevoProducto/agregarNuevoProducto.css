@@ -54,6 +54,7 @@
     .btn__menu__admi{
         width: 144px;
         height: 40px;
+        font-size: 13px;
     }
     .lavel__nuevo{
         width: 90%;
@@ -66,5 +67,16 @@
     .agregar__a{
         display: flex;
         align-items: center;
+    }
+}
+
+@media (max-width:360px) {
+    .btn__menu__admi{
+        width: 166px;
+        font-size: 14px;
+    }
+
+    .logo__busqueda__agregar{
+        width: 40%;
     }
 }

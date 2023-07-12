@@ -83,4 +83,12 @@
     .lavel__nuevo{
         font-size: 22px;
     }
+
+    .agregar__a{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .busqueda__texto__agregar{
+        left: 97px;
+    }
 }

@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>hola</h1>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraGeek</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/index/header.css">
+        <link rel="stylesheet" href="../css/index/main/hero.css">
+        <link rel="stylesheet" href="../css/index/main/categoria.css">
+        <link rel="stylesheet" href="../css/index/main/categoria__producto.css">
+        <link rel="stylesheet" href="../css/index/footer/camposFooter.css">
+        <link rel="stylesheet" href="../css/index/footer/footer.css">
+        <link rel="stylesheet" href="../css/index/footer/quienesSomos.css">
+        <link rel="stylesheet" href="../css/descripcion/descripcion.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <div class="header__responsive">
+
+                <div class="logo__busqueda">
+
+                    <div class="logo">
+                        <div class="logo__vestido">
+                            <img src="../img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
+                        </div>
+                        <p class="alura">Alura</p>
+                        <p class="greek">Greek</p>
+                    </div>
+
+                    <div class="busqueda__descripcion busqueda">
+
+                        <input type="text" class="texto__busqueda__descripcion texto__busqueda" id="busqueda__texto"
+                            placeholder="¿Qué deseas buscar?">
+                        <img src="../img/svg/lupa.svg" alt="" class="lupa__busqueda__descripcion lupa__busqueda"
+                            id="busqueda__lupa">
+
+                    </div>
+                </div>
+
+                <div class="login">
+                    <a href="html/login.html">
+                        <button class="login__btn" id="btn__login" name="boton para hacer login"
+                            type="button">Login</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+
+
+        </main>
+
+        <footer class="footer">
+
+            <section class="responsive__footer">
+
+                <div class="responsive__logoQuienes">
+                    <section class="logo__footer">
+
+                        <div class="logo__busqueda logo__busqueda__footer">
+
+                            <div class="logo logo__footer">
+                                <div class="logo__vestido">
+                                    <img src="../img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
+                                </div>
+                                <p class="alura">Alura</p>
+                                <p class="greek">Greek</p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="quienesSomos__footer">
+                        <a href="#">Quienes Somos</a>
+                        <a href="#">Politica de Privacidad</a>
+                        <a href="#">Programa de fidelidad</a>
+                        <a href="#">Nuestras Tiendas</a>
+                        <a href="#">Quiero ser franquiciado</a>
+                        <a href="#">Anúncie aqui</a>
+                    </section>
+                </div>
+
+                <section class="campos__footer">
+                    <label class="hable__footer">Hable con nosotros</label>
+
+                    <form action="" class="form__footer">
+                        <div class="single__input">
+                            <input required type="text" name="" id="none" class="input">
+                            <label>Nombre</label>
+                        </div>
+                    </form>
+
+                    <textarea class="textArea__footer" required name="textarea"
+                        placeholder="Escribe tu mensaje"></textarea>
+                    <button class="boton__hero">Enviar Mensaje</button>
+                </section>
+
+            </section>
+
+        </footer>
+
+        <secttion class="autores">
+
+            <div class="yo__autor">
+                <p>Desarrollado por Jossiel Baez</br>2023</p>
+            </div>
+
+        </secttion>
+
+        <!-- template para pintar los productos con su titulo, precio, etc. -->
+        <template id="template__card">
+            <div class="template__card">
+                <div class="card__merca">
+                    <img src="" alt="" class="img__card">
+                    <div class="card__body">
+                        <h5>Titulo</h5>
+                        <p>precio</p>
+                        <p>descripcion</p>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- ///////////////////////////////////////////////////////////////////// -->
+
+        <!-- template -->
+        <template id="template__card">
+            <div class="template__card">
+                <div class="card__merca">
+                    <img src="" alt="" class="img__card">
+                    <div class="card__body">
+                        <h5>Titulo</h5>
+                        <p>precio</p>
+                        <a href="/html/descripcion.html">
+                            <button class="btn__card">Ver Producto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- ///////////////////////////////////////////////////////////////////// -->
+
+        <script src="../js/app__descripcion.js" type="module"></script>
+    </body>
+
+    </html>
+
 </body>
+
 </html>

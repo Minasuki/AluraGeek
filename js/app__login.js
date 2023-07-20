@@ -13,15 +13,15 @@ const alertContraseña = document.getElementById('alertContraseña');
 const regUserCorreo = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
 const regUserContraseña = /[a-z0-9]$/;
 
-const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
 
 busquedaTexto.addEventListener('click', () => {
-    busquedalupa.classList.add('d-none')
+    document.querySelector('.lupa__busqueda').classList.add('lupa__busqueda-inactivo');
 });
 
 busquedaTexto.addEventListener('blur', () => {
-    busquedalupa.classList.remove('d-none')
+    document.querySelector('.lupa__busqueda').classList.remove('lupa__busqueda-inactivo');
+
 });
 
 /*

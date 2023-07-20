@@ -96,6 +96,10 @@
     color: #d7d7d7;
 }
 
+.lupa__busqueda-inactivo {
+    display: none;
+}
+
 /*  Boton Login  */
 .login {
     display: flex;

@@ -10,7 +10,6 @@ const cardsH = document.getElementById('cards__men');
 const templateCard = document.getElementById('template__card').content;
 const fragment = document.createDocumentFragment();
 
-const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
 const btnLogin = document.getElementById('btn__login');
 
@@ -22,11 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 busquedaTexto.addEventListener('click', () => {
-    busquedalupa.classList.add('d-none')
+    document.querySelector('.lupa__busqueda').classList.add('lupa__busqueda-inactivo');
 });
 
 busquedaTexto.addEventListener('blur', () => {
-    busquedalupa.classList.remove('d-none')
+    document.querySelector('.lupa__busqueda').classList.remove('lupa__busqueda-inactivo');
+
 });
 /*
 titleQuestions.forEach(question => {

@@ -1,14 +1,14 @@
-const busquedalupa = document.getElementById('busqueda__lupa');
 const busquedaTexto = document.getElementById('busqueda__texto');
 
 const btnAgregar = document.getElementById('btn__agregar');
 
 busquedaTexto.addEventListener('click', () => {
-    busquedalupa.classList.add('d-none')
+    document.querySelector('.lupa__busqueda').classList.add('lupa__busqueda-inactivo');
 });
 
 busquedaTexto.addEventListener('blur', () => {
-    busquedalupa.classList.remove('d-none')
+    document.querySelector('.lupa__busqueda').classList.remove('lupa__busqueda-inactivo');
+
 });
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,4 +1,6 @@
-.campos__footer {
+/*  Aqui se hicieron las aniacines para los inputs(Capo de texto)  */
+
+.campos__footer {    
     display: flex;
     flex-direction: column;
     justify-content: space-between;

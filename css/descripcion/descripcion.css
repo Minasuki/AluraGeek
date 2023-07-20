@@ -1,0 +1,12 @@
+.texto__busqueda__descripcion{
+height: 75%;
+}
+
+.busqueda__descripcion{
+    align-items: center;
+}
+
+.lupa__busqueda__descripcion{
+    width: 40px;
+    height: 40px;
+}

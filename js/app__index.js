@@ -12,13 +12,14 @@ const fragment = document.createDocumentFragment();
 
 const busquedaTexto = document.getElementById('busqueda__texto');
 const btnLogin = document.getElementById('btn__login');
+//const cards = document.querySelector('.roww');
 
-const btnVerTodo = [...document.querySelectorAll('button.btn__Ver__todo')];
-//const titleQuestions = [...document.querySelectorAll('.questions__title')];
+const btnVerTodo = [...document.querySelectorAll('.btn__Ver__todo')];
+const cardsTodo = [...document.querySelectorAll('.roww')];
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
-})
+});
 
 busquedaTexto.addEventListener('click', () => {
     document.querySelector('.lupa__busqueda').classList.add('lupa__busqueda-inactivo');
@@ -26,18 +27,19 @@ busquedaTexto.addEventListener('click', () => {
 
 busquedaTexto.addEventListener('blur', () => {
     document.querySelector('.lupa__busqueda').classList.remove('lupa__busqueda-inactivo');
-
 });
-/*
-titleQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            */
+
+cardsTodo.forEach(valor => {
+    valor.addEventListener('click', (e) => {
+        addCarrito(e);
+    });
+});
 
 btnVerTodo.forEach(valor => {
     valor.addEventListener('click', () => {
         location.href = '/html/login.html';
-    })
-})
+    });
+});
 
 
 const fetchData = async () => {
@@ -175,6 +177,14 @@ const pintarCardsH = (data) => {
     cardsH.appendChild(fragment);
 };
 
+const addCarrito = (e) => {
+     console.log(e.target);
+    // console.log(e.target.classList.contains('btn'));
+    // if (e.target.classList.contains('btn')) {
+    //     setCarrito(e.target.parentElement);
+    // }
+    // e.stopPropagation();
+};
 
 export const borrarBoton = () => {
 

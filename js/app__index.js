@@ -178,15 +178,30 @@ const pintarCardsH = (data) => {
 };
 
 const addCarrito = (e) => {
-     console.log(e.target);
-    // console.log(e.target.classList.contains('btn'));
-    // if (e.target.classList.contains('btn')) {
-    //     setCarrito(e.target.parentElement);
-    // }
-    // e.stopPropagation();
+    //  console.log(e.target);
+    //  console.log(e.target.classList.contains('btn'));
+    if (e.target.classList.contains('btn__card')) {
+        setCarrito(e.target.parentElement);
+    }
+    e.stopPropagation();
 };
 
-export const borrarBoton = () => {
+let valorId;
+
+const setCarrito = objeto => {
+
+    const productoID = {
+        id: objeto.querySelector('.btn__card').dataset.id,
+        // title: objeto.querySelector('h5').textContent,
+        // precio: objeto.querySelector('p').textContent,
+        // cantidad: 1,
+    }
+    valorId = productoID.id;
+    console.log(valorId);
+};
+
+
+const borrarBoton = () => {
 
     let ancho = window.innerWidth;
     console.log(ancho);

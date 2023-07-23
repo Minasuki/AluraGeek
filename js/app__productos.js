@@ -14,7 +14,6 @@ busquedaTexto.addEventListener('click', () => {
 
 busquedaTexto.addEventListener('blur', () => {
     document.querySelector('.lupa__busqueda').classList.remove('lupa__busqueda-inactivo');
-
 });
 
 document.addEventListener('DOMContentLoaded', () => {

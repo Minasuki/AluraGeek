@@ -198,6 +198,7 @@ const setCarrito = objeto => {
     }
     valorId = productoID.id;
     console.log(valorId);
+    localStorage.setItem('idCard', JSON.stringify(valorId));
 };
 
 

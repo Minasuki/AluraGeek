@@ -46,6 +46,7 @@
     padding: 12px;
     gap: 10px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 @media (max-width:768px) {

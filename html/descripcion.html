@@ -22,8 +22,9 @@
         <link rel="stylesheet" href="../css/headerYfooter/footer/quienesSomos.css">
         <link rel="stylesheet" href="../css/headerYfooter/header.css">
         <link rel="stylesheet" href="../css/descripcion/descripcion.css">
+        <link rel="stylesheet" href="../css/descripcion/similares.css">
         <link rel="stylesheet" href="../css/index/categoria.css">
-    <link rel="stylesheet" href="../css/index/categoria__producto.css">
+        <link rel="stylesheet" href="../css/index/categoria__producto.css">
     </head>
 
     <body>
@@ -34,13 +35,15 @@
 
                 <div class="logo__busqueda">
 
-                    <div class="logo">
-                        <div class="logo__vestido">
-                            <img src="../img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
+                    <a href="../index.html">
+                        <div class="logo">
+                            <div class="logo__vestido">
+                                <img src="../img/svg/vestido.svg" alt="Logo del sitio" class="vestido">
+                            </div>
+                            <p class="alura">Alura</p>
+                            <p class="greek">Greek</p>
                         </div>
-                        <p class="alura">Alura</p>
-                        <p class="greek">Greek</p>
-                    </div>
+                    </a>
 
                     <div class="busqueda__descripcion busqueda">
 
@@ -65,8 +68,13 @@
 
         <main>
 
-            <div class="tamanio__general tamanio__general__descripcion">
-                <div class="roww roww__descripcion" id="cards"></div>
+            <div class="tamanio__general__descripcion">
+                <div class="roww__descripcion" id="cards"></div>
+            </div>
+
+            <div class="tamanio__general__similares">
+                <h3>Productos similares</h3>
+                <div class="roww__similares" id="cards__similares"></div>
             </div>
 
         </main>
@@ -131,10 +139,10 @@
 
         <!-- template para pintar los productos con su titulo, precio, etc. -->
         <template id="template__card__descripcion">
-            <div class="template__card">
-                <div class="card__merca">
-                    <img src="" alt="" class="img__card">
-                    <div class="card__body">
+            <div class="template__card__descripcion">
+                <div class="card__merca__descripcion">
+                    <img src="" alt="" class="img__card__descripcion">
+                    <div class="card__body__descripcion">
                         <h5>Titulo</h5>
                         <p>precio</p>
                         <p>descripcion</p>
@@ -145,16 +153,16 @@
         <!-- ///////////////////////////////////////////////////////////////////// -->
 
         <!-- template -->
-        <template id="template__card">
-            <div class="template__card">
-                <div class="card__merca">
-                    <img src="" alt="" class="img__card">
-                    <div class="card__body">
+        <template id="template__card__similares">
+            <div class="template__card__similares">
+                <div class="card__merca__similares">
+                    <img src="" alt="" class="img__card__similares">
+                    <div class="card__body__similares">
                         <h5>Titulo</h5>
                         <p>precio</p>
-                        <a href="/html/descripcion.html">
-                            <button class="btn__card">Ver Producto</button>
-                        </a>
+                        <!-- <a href="/html/descripcion.html"> -->
+                            <button class="btn__card__similares">Ver Producto</button>
+                        <!-- </a> -->
                     </div>
                 </div>
             </div>

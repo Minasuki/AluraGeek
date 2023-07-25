@@ -1,16 +1,61 @@
-.texto__busqueda__descripcion{
-height: 75%;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Raleway:wght@300;500;600&display=swap');
+
+.texto__busqueda__descripcion {
+    height: 75%;
 }
 
-.busqueda__descripcion{
+.busqueda__descripcion {
     align-items: center;
 }
 
-.lupa__busqueda__descripcion{
+.lupa__busqueda__descripcion {
     width: 40px;
     height: 40px;
 }
+
+.tamanio__general__descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway';
+    background-color: #f5f5f5;
+}
+
 .roww__descripcion {
+    width: 80%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: start;
+}
+
+.template__card__descripcion {
+    display: flex;
+}
+
+.card__merca__descripcion {
+    display: flex;
+    align-items: center;
+}
+
+.img__card__descripcion {
+    width: 70%;
+    height: 70%;
+    margin-right: 0.5rem;
+}
+
+.card__body__descripcion {
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__body__descripcion>h5 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.card__body__descripcion>p {
+    font-size: 16px;
+    font-weight: bold;
 }
